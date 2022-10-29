@@ -1,0 +1,44 @@
+.den-wrapper {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.den {
+  animation: scale-in 0.25s ease;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(10.1px);
+  display: inline-block;
+}
+
+.den-body {
+  color: #fff;
+}
+
+.den-text {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
